@@ -18,8 +18,6 @@ model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})  # Allows all origins
 
-CORS(app)
-
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
 
